@@ -6,8 +6,7 @@ import {
   MfonAiDetailsOverlay,
   MPBlogDetailsOverlay,
 } from './ProjectsOverlay';
-import responseBodyImg from '../../../assets/response-body.webp';
-import errorImg from '../../../assets/error.webp';
+
 
 export const LaonDetails = ({ openLaonDetails, openLaonDetailsHandler }) => {
   return (
