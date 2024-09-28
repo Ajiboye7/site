@@ -5,6 +5,7 @@ import {
   BettershotzDetailsOverlay,
   MfonAiDetailsOverlay,
   MPBlogDetailsOverlay,
+  YoutubeDetailsOverlay,
 } from './ProjectsOverlay';
 
 
@@ -261,11 +262,11 @@ export const MfonAiDetails = ({
         </button>
         <div className="pb-6 px-2 mt-12 sm:px-4">
           <div className="flex justify-between">
-            <h3 className="mb-2">Mfon.ai</h3>
+            <h3 className="mb-2">e-medics</h3>
           </div>
           <p className="mb-2 text-lg font-semibold">
             Below, you'll discover additional details about my process in
-            building the finance app
+            building the e-medics app
           </p>
           <ul className="flex flex-col space-y-2 mb-8">
             <li className="flex space-x-2 max-w-3xl">
@@ -427,5 +428,107 @@ export const MPBlogDetails = ({
     </>
   );
 };
+
+
+
+export const YoutubeDetails = ({
+  openYoutubeDetails,
+  openYoutubeDetailsHandler,
+}) => {
+  return (
+    <>
+      <YoutubeDetailsOverlay
+        openMfonAiDetails={openYoutubeDetails}
+        openMfonAiDetailsHandler={openYoutubeDetailsHandler}
+      />
+      <aside
+        className={`absolute z-10 left-0 w-[90%] bg-white rounded-xl transiton-all duration-500 lg:w-auto ${
+          openYoutubeDetails ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <button
+          onClick={openYoutubeDetailsHandler}
+          className="absolute top-2 right-2 bg-orange-400 rounded transition-colors hover:bg-orange-300"
+        >
+          <BsX size="25" color="white" />
+        </button>
+        <div className="pb-6 px-2 mt-12 sm:px-4">
+          <div className="flex justify-between">
+            <h3 className="mb-2">Youtube Clone</h3>
+          </div>
+          <p className="mb-2 text-lg font-semibold">
+            Below, you'll discover additional details about my process in
+            building the finance app
+          </p>
+          <ul className="flex flex-col space-y-2 mb-8">
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+              Used to build a modern and scalable web application with server-side rendering (SSR) and static site generation (SSG), ensuring fast load times and enhanced SEO.
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>Rapid Api was Integrated to fetch up-to-date video content directly from YouTube, allowing the app to stay current with the latest video trends and recommendations.</span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+              I Utilized to create a sleek, modern, and fully responsive user interface (UI) that looks great across all devices, while minimizing the need for custom CSS.
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+              React Components were used to modularize the application, creating reusable components like video cards, sidebars, and search functionality for a more maintainable and scalable codebase
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+              I Effectively implemented to handle data fetching and content updates, ensuring users always see the latest videos, trending topics, and personalized content.
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>Deployed the site on Vercel</span>
+            </li>
+          </ul>
+
+          <div className="flex flex-col space-y-2 xs:flex-row xs:space-y-0 xs:space-x-2">
+            <ButtonSmall link="https://emedicstore.vercel.app/" text="Live Link" />
+            <ButtonSmallZinc
+              link=" https://github.com/Ajiboye7/emedicstore.git"
+              text="GitHub Link"
+            />
+          </div>
+        </div>
+      </aside>
+    </>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
 
 

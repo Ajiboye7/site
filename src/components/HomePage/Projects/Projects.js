@@ -5,6 +5,7 @@ import {
   BettershotzDetails,
   MfonAiDetails,
   MPBlogDetails,
+  YoutubeDetails,
 } from './ProjectsDetails';
 import CryptoImage from '../../../assets/cryptoapp.png';
 import workoutIng from '../../../assets/excercise photo.png';
@@ -18,7 +19,7 @@ const Projects = () => {
   const [openMfonAiDetails, setOpenMfonAiDetails] = useState(false);
   const [openMPBlogDetails, setOpenMPBlogDetails] = useState(false);
 
-  const [openYoutubeDetails, setYoutubeDetails] = useState(false);
+  const [openYoutubeDetails, setOpenYoutubeDetails] = useState(false);
 
   const openLaonDetailsHandler = () => setOpenLaonDetails(preVal => !preVal);
   const openBettershotzDetailsHandler = () =>
@@ -28,8 +29,8 @@ const Projects = () => {
   const openMPBlogDetailsHandler = () =>
     setOpenMPBlogDetails(preVal => !preVal);
 
-  const openYoutubeHandler = () =>
-    setYoutubeDetails(preVal => !preVal);
+  const openYoutubeDetailsHandler = () =>
+    setOpenYoutubeDetails(preVal => !preVal);
 
   return (
     <section id="projects" className="pt-16 pb-16 bg-[#fdf2e9]">
@@ -234,7 +235,7 @@ const Projects = () => {
             />
           </div>
           <div className="flex flex-col">
-            <h3 className="mb-2">e-medics</h3>
+            <h3 className="mb-2">Youtube Clone</h3>
             <p className="mb-4 text-gray-800 md:text-lg">
             The YouTube clone app is a dynamic video-streaming platform, built with Next.js, leveraging RapidAPI for real-time video data, and ensuring smooth navigation using state management. With a sleek, responsive design powered by Tailwind CSS, the app offers a seamless user experience across devices. Key features include real-time video updates, easy-to-navigate video categories, and robust state management for optimal performance and data handling
             </p>
@@ -259,16 +260,16 @@ const Projects = () => {
                 text="Live Link"
               />
               <button
-                onClick={openMfonAiDetailsHandler}
+                onClick={openYoutubeDetailsHandler}
                 className="relative px-6 py-2 text-white font-bold uppercase bg-gradient-to-r from-zinc-400 to-zinc-600 rounded-full outline-none transition-all duration-200 after:inline-block after:w-full after:h-full after:absolute after:inset-0 after:bg-gradient-to-r after:from-zinc-500 after:to-zinc-700 after:rounded-full after:-z-10 after:duration-500 hover:from-zinc-500 hover:to-zinc-700 hover:-translate-y-[3px] hover:shadow-2xl hover:after:scale-x-[1.3] hover:after:scale-y-[1.3] hover:after:opacity-0 focus:-translate-y-[1px] focus:animate-pulsate"
               >
                 More Details
               </button>
             </div>
           </div>
-          <MfonAiDetails
-            openMfonAiDetails={setYoutubeDetails}
-            openMfonAiDetailsHandler={openYoutubeHandler}
+          <YoutubeDetails
+            openYoutubeDetails={openYoutubeDetails}
+            openYoutubeDetailsHandler={openYoutubeDetailsHandler}
           />
         </div>
       </div>

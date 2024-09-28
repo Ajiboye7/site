@@ -53,3 +53,19 @@ export const MPBlogDetailsOverlay = ({
     />
   );
 };
+
+
+
+export const YoutubeDetailsOverlay = ({
+  openYoutubeDetails,
+  openYoutubeHandler,
+}) => {
+  return (
+    <div
+      onClick={openYoutubeHandler}
+      className={`fixed top-0 left-0 z-10 w-full h-screen bg-orange-50/50 transition-all duration-500 ${
+        openYoutubeDetails ? 'block' : 'hidden'
+      }`}
+    />
+  );
+};
