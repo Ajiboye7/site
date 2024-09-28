@@ -10,12 +10,15 @@ import CryptoImage from '../../../assets/cryptoapp.png';
 import workoutIng from '../../../assets/excercise photo.png';
 import emedicImg from '../../../assets/emdeic.png';
 import cardcircuitImg from '../../../assets/card.png';
+import youtube from '../../../assets/youtube.png';
 
 const Projects = () => {
   const [openLaonDetails, setOpenLaonDetails] = useState(false);
   const [openBettershotzDetails, setOpenBettershotzDetails] = useState(false);
   const [openMfonAiDetails, setOpenMfonAiDetails] = useState(false);
   const [openMPBlogDetails, setOpenMPBlogDetails] = useState(false);
+
+  const [openYoutubeDetails, setYoutubeDetails] = useState(false);
 
   const openLaonDetailsHandler = () => setOpenLaonDetails(preVal => !preVal);
   const openBettershotzDetailsHandler = () =>
@@ -24,6 +27,9 @@ const Projects = () => {
     setOpenMfonAiDetails(preVal => !preVal);
   const openMPBlogDetailsHandler = () =>
     setOpenMPBlogDetails(preVal => !preVal);
+
+  const openYoutubeHandler = () =>
+    setYoutubeDetails(preVal => !preVal);
 
   return (
     <section id="projects" className="pt-16 pb-16 bg-[#fdf2e9]">
@@ -214,6 +220,55 @@ const Projects = () => {
           <MPBlogDetails
             openMPBlogDetails={openMPBlogDetails}
             openMPBlogDetailsHandler={openMPBlogDetailsHandler}
+          />
+        </div>
+
+
+         {/* PROJECT 5 */}
+         <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-y-0 md:gap-x-14">
+          <div className="flex items-end justify-center bg-white/50 rounded-xl">
+            <img
+              src={youtube}
+              alt="Mfon.ai"
+              className="w-[90%] h-[95%] rounded-t-xl shadow-top-left-right xs:w-[70%]"
+            />
+          </div>
+          <div className="flex flex-col">
+            <h3 className="mb-2">e-medics</h3>
+            <p className="mb-4 text-gray-800 md:text-lg">
+            The YouTube clone app is a dynamic video-streaming platform, built with Next.js, leveraging RapidAPI for real-time video data, and ensuring smooth navigation using state management. With a sleek, responsive design powered by Tailwind CSS, the app offers a seamless user experience across devices. Key features include real-time video updates, easy-to-navigate video categories, and robust state management for optimal performance and data handling
+            </p>
+            <div className="grid grid-cols-2 gap-1 mb-4 text-[14.5px] font-semibold xs:flex">
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Next.js
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Rapid Api
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Tailwind CSS
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Animations
+              </span>
+            </div>
+            <div className="grow shrink" />
+            <div className="flex flex-col space-y-2 xs:flex-row xs:space-x-2 xs:space-y-0">
+              <ButtonSmall
+                link="https://youtubelone.vercel.app/"
+                text="Live Link"
+              />
+              <button
+                onClick={openMfonAiDetailsHandler}
+                className="relative px-6 py-2 text-white font-bold uppercase bg-gradient-to-r from-zinc-400 to-zinc-600 rounded-full outline-none transition-all duration-200 after:inline-block after:w-full after:h-full after:absolute after:inset-0 after:bg-gradient-to-r after:from-zinc-500 after:to-zinc-700 after:rounded-full after:-z-10 after:duration-500 hover:from-zinc-500 hover:to-zinc-700 hover:-translate-y-[3px] hover:shadow-2xl hover:after:scale-x-[1.3] hover:after:scale-y-[1.3] hover:after:opacity-0 focus:-translate-y-[1px] focus:animate-pulsate"
+              >
+                More Details
+              </button>
+            </div>
+          </div>
+          <MfonAiDetails
+            openMfonAiDetails={setYoutubeDetails}
+            openMfonAiDetailsHandler={openYoutubeHandler}
           />
         </div>
       </div>
