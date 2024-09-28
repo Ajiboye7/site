@@ -508,9 +508,9 @@ export const YoutubeDetails = ({
           </ul>
 
           <div className="flex flex-col space-y-2 xs:flex-row xs:space-y-0 xs:space-x-2">
-            <ButtonSmall link="https://emedicstore.vercel.app/" text="Live Link" />
+            <ButtonSmall link="https://youtubelone.vercel.app/" text="Live Link" />
             <ButtonSmallZinc
-              link=" https://github.com/Ajiboye7/emedicstore.git"
+              link=" https://github.com/Ajiboye7/ClonedYoutube.git"
               text="GitHub Link"
             />
           </div>
