@@ -12,3 +12,4 @@ to run the app in development mode. It will open http://localhost:3000 to view t
 You can view the site on http://mfonpeter.netlify.app/
 "# portfolioUpdate"  -->
 "# newPortfolio" 
+"# site" 

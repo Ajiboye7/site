@@ -20,7 +20,7 @@ const HeroSection = () => {
               A Software Web Developer dedicated to crafting exceptional user experiences by seamlessly integrating frontend and backend technologies. With a strong emphasis on both the frontend and backend development, I specialize in architecting robust, scalable solutions that drive the success of digital products.
               </p>
               <div className="animate-btnMoveInBottom">
-                <Button link="#projects" text="Projects" />
+                <Button link ="/Ajiboye Muyideen Software Eng..pdf" text="Download Cv" />
               </div>
             </div>
 
