@@ -1,6 +1,6 @@
 import { BsLinkedin, BsTwitter, BsGithub } from 'react-icons/bs';
 
-const currentYear = new Date().getFullYear();
+
 
 const Footer = () => {
   return (
