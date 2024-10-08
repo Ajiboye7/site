@@ -40,6 +40,20 @@ const HeroSection = () => {
           href="https://www.linkedin.com/in/ajiboye-muyideen-b5a5291b0/"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >
+          <BsLinkedin size={28} />
+        </a>
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://x.com/MuyideenAjiboye"
+          className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
+        >
+          <BsTwitter size={28} />
+        </a>
+        <a
+          rel="noreferrer"
+          target="_blank"
+            href="https://github.com/Ajiboye7"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >
           <BsGithub size={28} />
