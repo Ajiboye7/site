@@ -458,7 +458,7 @@ export const YoutubeDetails = ({
           </div>
           <p className="mb-2 text-lg font-semibold">
             Below, you'll discover additional details about my process in
-            building the finance app
+            building the finance app.
           </p>
           <ul className="flex flex-col space-y-2 mb-8">
             <li className="flex space-x-2 max-w-3xl">
