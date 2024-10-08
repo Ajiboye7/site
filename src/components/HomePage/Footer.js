@@ -16,7 +16,27 @@ const Footer = () => {
 
         <div className="flex flex-col items-start md:items-center">
           <h4 className="mb-4 text-2xl font-bold uppercase">Social</h4>
-          <div cl
+          <div className="flex space-x-4">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/ajiboye-muyideen-b5a5291b0/"
+              className="inline-block transition-all hover:scale-110"
+             
+            >
+              <BsLinkedin size={24} />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://x.com/MuyideenAjiboye"
+              className="inline-block transition-all hover:scale-110"
+            >
+              <BsTwitter size={24} />
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
               href="https://github.com/Ajiboye7"
               className="inline-block transition-all hover:scale-110"
             >
