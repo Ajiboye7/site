@@ -435,32 +435,6 @@ export const YoutubeDetails = ({
   openYoutubeDetails,
   openYoutubeDetailsHandler,
 }) => {
-  return (
-    <>
-      <YoutubeDetailsOverlay
-        openMfonAiDetails={openYoutubeDetails}
-        openMfonAiDetailsHandler={openYoutubeDetailsHandler}
-      />
-      <aside
-        className={`absolute z-10 left-0 w-[90%] bg-white rounded-xl transiton-all duration-500 lg:w-auto ${
-          openYoutubeDetails ? 'translate-x-0' : '-translate-x-full'
-        }`}
-      >
-        <button
-          onClick={openYoutubeDetailsHandler}
-          className="absolute top-2 right-2 bg-orange-400 rounded transition-colors hover:bg-orange-300"
-        >
-          <BsX size="25" color="white" />
-        </button>
-        <div className="pb-6 px-2 mt-12 sm:px-4">
-          <div className="flex justify-between">
-            <h3 className="mb-2">Youtube Clone</h3>
-          </div>
-          <p className="mb-2 text-lg font-semibold">
-            Below, you'll discover additional details about my process in
-            building the finance app.
-          </p>
-          <ul className="flex flex-col space-y-2 mb-8">
             <li className="flex space-x-2 max-w-3xl">
               <div className="mt-1">
                 <BsFillCheckCircleFill color="orange" size="15" />
