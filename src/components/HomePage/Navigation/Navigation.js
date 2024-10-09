@@ -8,7 +8,59 @@ import logo from '../../../assets/portfolioLogo.jpg';
 
 const Navigation = () => {
   const [stickyNav, setStickyNav] = useState(false);
-  const [showM
+  const [showModal, setShowModal] = useState(false);
+
+  const stickyNavHandler = () => {
+    if (
+      (window.innerWidth <= 768 && window.scrollY >= 800) ||
+      (window.innerWidth >= 768 && window.scrollY >= 610)
+    ) {
+      setStickyNav(true);
+    } else {
+      setStickyNav(false);
+    }
+  };
+
+  window.addEventListener('scroll', stickyNavHandler);
+
+  const openModal = () => {
+    setShowModal(prevState => !prevState);
+  };
+
+  return (
+    <Fragment>
+      <nav className="relative z-20 pt-3 mb-10">
+        <div
+          className={`flex items-center justify-between py-1 pl-6 pr-4 w-11/12 bg-white rounded-full mx-auto shadow-xl ${
+            stickyNav && 'fixed left-1/2 -translate-x-1/2'
+          }`}
+        >
+          <a
+            href="https://mfonpeter.netlify.app/"
+            className="outline-orange-700"
+          >
+            <img src={logo} alt="My Logo" className="w-14 h-14" />
+          </a>
+
+          <ul className="hidden items-center space-x-12 font-semibold text-lg text-gray-800 md:flex">
+            <NavigationList link="https://mfonpeter.netlify.app/" text="Home" />
+            <NavigationList link="#about" text="About" />
+            <NavigationList link="#professional" text="Professional" />
+            <NavigationList link="#projects" text="Projects" />
+            <a
+              href="mailto:godimfon@gmail.com"
+              className="relative flex items-center space-x-1 px-5 py-2 text-white bg-gradient-to-r from-orange-400 to-orange-600 rounded-full outline-none transition-all duration-200 after:inline-block after:w-full after:h-full after:absolute after:inset-0 after:bg-gradient-to-r after:from-orange-500 after:to-orange-700 after:rounded-full after:-z-10 after:duration-500 hover:from-orange-500 hover:to-orange-700 hover:-translate-y-[3px] hover:shadow-2xl hover:after:scale-x-[1.3] hover:after:scale-y-[1.3] hover:after:opacity-0 focus:-translate-y-[1px] focus:animate-pulsate"
+            >
+              <li>Contact</li>
+              <MdMail color="white" />
+            </a>
+          </ul>
+
+          <div onClick={openModal} className="pr-4 cursor-pointer md:hidden">
+            <RxHamburgerMenu size={24} />
+          </div>
+
+          {/* Mobile Navigation */}
           {showModal && (
             <div
               onClick={openModal}
