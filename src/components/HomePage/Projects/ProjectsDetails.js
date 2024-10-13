@@ -405,25 +405,8 @@ export const MPBlogDetails = ({
             </li>
             <li className="flex space-x-2 max-w-3xl">
               <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>
-                I deployed it using vercel.
-              </span>
-            </li>
-          </ul>
-         
-          <div className="flex flex-col space-y-2 xs:flex-row xs:space-y-0 xs:space-x-2">
-            <ButtonSmall
-              link="https://card-circuit.vercel.app/"
-              text="Live Link"
-            />
-            <ButtonSmallZinc
-              link="https://github.com/Ajiboye7/CardCircuit.git"
-              text="GitHub Link"
-            />
-          </div>
-        </div>
+                <Bs
+                <Bs
       </aside>
     </>
   );
