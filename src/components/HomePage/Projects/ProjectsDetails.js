@@ -483,20 +483,6 @@ export const YoutubeDetails = ({
               I Utilized to create a sleek, modern, and fully responsive user interface (UI) that looks great across all devices, while minimizing the need for custom CSS.
               </span>
             </li>
-            <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>
-              React Components were used to modularize the application, creating reusable components like video cards, sidebars, and search functionality for a more maintainable and scalable codebase
-              </span>
-            </li>
-            <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>
-              I Effectively implemented to handle data fetching and content updates, ensuring users always see the latest videos, trending topics, and personalized content.
               </span>
             </li>
             <li className="flex space-x-2 max-w-3xl">
