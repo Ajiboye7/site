@@ -500,20 +500,7 @@ export const YoutubeDetails = ({
               </span>
             </li>
             <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>Deployed the site on Vercel</span>
-            </li>
-          </ul>
-
-          <div className="flex flex-col space-y-2 xs:flex-row xs:space-y-0 xs:space-x-2">
-            <ButtonSmall link="https://youtubelone.vercel.app/" text="Live Link" />
-            <ButtonSmallZinc
-              link=" https://github.com/Ajiboye7/ClonedYoutube.git"
-              text="GitHub Link"
-            />
-          </div>
+            
         </div>
       </aside>
     </>
