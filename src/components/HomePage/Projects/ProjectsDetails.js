@@ -431,11 +431,7 @@ export const MPBlogDetails = ({
 
 
 
-export const YoutubeDetails = ({
-  openYoutubeDetails,
-  openYoutubeDetailsHandler,
-}) => {
-  return (
+export const Y
     <>
       <YoutubeDetailsOverlay
         openMfonAiDetails={openYoutubeDetails}
