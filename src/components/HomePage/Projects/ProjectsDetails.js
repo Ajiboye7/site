@@ -392,42 +392,6 @@ export const MPBlogDetails = ({
                 <BsFillCheckCircleFill color="orange" size="15" />
               </div>
               <span>
-                I Leveraged CSS animations for smooth transitions and hover effects, such as hover-triggered testimonials and buttons with dynamic effects.
-              </span>
-            </li>
-            <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>
-                I  Created visually appealing text and button borders with gradient colors to enhance the look and feel of the UI.
-              </span>
-            </li>
-            <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>
-                I deployed it using vercel.
-              </span>
-            </li>
-          </ul>
-         
-          <div className="flex flex-col space-y-2 xs:flex-row xs:space-y-0 xs:space-x-2">
-            <ButtonSmall
-              link="https://card-circuit.vercel.app/"
-              text="Live Link"
-            />
-            <ButtonSmallZinc
-              link="https://github.com/Ajiboye7/CardCircuit.git"
-              text="GitHub Link"
-            />
-          </div>
-        </div>
-      </aside>
-    </>
-  );
-};
 
 
 
