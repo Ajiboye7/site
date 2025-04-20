@@ -2,9 +2,7 @@ import { BsX, BsFillCheckCircleFill } from 'react-icons/bs';
 import { ButtonSmall, ButtonSmallZinc } from '../../UI/Button';
 import {
   LaonDetailsOverlay,
-  BettershotzDetailsOverlay,
-  MfonAiDetailsOverlay,
-  MPBlogDetailsOverlay,
+
   YoutubeDetailsOverlay,
 } from './ProjectsOverlay';
 
@@ -401,7 +399,19 @@ export const MPBlogDetails = ({
               </div>
               <span>
                 I  Created visually appealing text and button borders with gradient colors to enhance the look and feel of the UI.
-         space-x-2">
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+                I deployed it using vercel.
+              </span>
+            </li>
+          </ul>
+         
+          <div className="flex flex-col space-y-2 xs:flex-row xs:space-y-0 xs:space-x-2">
             <ButtonSmall
               link="https://card-circuit.vercel.app/"
               text="Live Link"
