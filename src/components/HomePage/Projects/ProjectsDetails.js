@@ -2,9 +2,7 @@ import { BsX, BsFillCheckCircleFill } from 'react-icons/bs';
 import { ButtonSmall, ButtonSmallZinc } from '../../UI/Button';
 import {
   LaonDetailsOverlay,
-  BettershotzDetailsOverlay,
-  MfonAiDetailsOverlay,
-  MPBlogDetailsOverlay,
+
   YoutubeDetailsOverlay,
 } from './ProjectsOverlay';
 
