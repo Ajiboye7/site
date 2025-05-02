@@ -44,11 +44,6 @@ export const LaonDetails = ({ openLaonDetails, openLaonDetailsHandler }) => {
               Real-Time Data: Utilizes two APIs to fetch up-to-date information on cryptocurrency trends and prices.
               </span>
             </li>
-            <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>
               Data Visualization: Implements Chart.js to create interactive and visually appealing charts for better data understanding.
               </span>
             </li>
