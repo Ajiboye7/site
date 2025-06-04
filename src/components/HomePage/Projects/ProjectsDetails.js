@@ -73,7 +73,7 @@ export const LaonDetails = ({ openLaonDetails, openLaonDetailsHandler }) => {
               <div className="mt-1">
                 <BsFillCheckCircleFill color="orange" size="15" />
               </div>
-              
+              <span>
                 Implemented React Context for automatic user logout after one
                 hour of inactivity.
               </span>
