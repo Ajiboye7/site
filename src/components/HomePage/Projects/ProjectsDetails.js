@@ -61,17 +61,7 @@ export const LaonDetails = ({ openLaonDetails, openLaonDetailsHandler }) => {
                 payment processing.
               </span>
             </li>
-            <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
-              </div>
-              <span>
-              State Management: Employs state management techniques to ensure seamless data flow and efficient state handling throughout the app.
-              </span>
-            </li>
-            <li className="flex space-x-2 max-w-3xl">
-              <div className="mt-1">
-                <BsFillCheckCircleFill color="orange" size="15" />
+            <li cla" />
               </div>
               <span>
                 Implemented React Context for automatic user logout after one
