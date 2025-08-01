@@ -200,7 +200,7 @@ const Projects = () => {
             <div className="grow shrink" />
             <div className="flex flex-col space-y-2 xs:flex-row xs:space-x-2 xs:space-y-0">
               <ButtonSmall
-                link="https://mfon-ai.vercel.app/"
+                link="https://card-circuit.vercel.app/"
                 text="Live Link"
               />
               <button
