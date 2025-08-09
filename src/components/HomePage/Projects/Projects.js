@@ -37,7 +37,11 @@ const Projects = () => {
       <div className="px-2 mb-12 text-center md:mb-16">
         <h2>Projects</h2>
         <p className="max-w-2xl px-4 mx-auto text-lg text-gray-800 sm:px-10 md:text-xl md:max-w-3xl md:px-0">
-      
+          Here you will find some of the personal projects that I created from
+          scratch based on my current skillset. Click on the live link to see
+          the live version of the project. To find out more, click on More
+          Details
+        </p>
       </div>
 
       <div className="container mx-auto max-w-7xl grid grid-cols-1 gap-y-14 px-4 md:gap-y-20">
